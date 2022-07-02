@@ -19,6 +19,8 @@ con.on("error", () => console.error("Error occurred..."));
 
 const userRouter = require("./routes/users");
 
+app.get("/",(req,res)=> res.send("Hello express"))
+
 app.use("/users", userRouter);
 
 app.listen(process.env.PORT || 3000, () => console.log("server started"));
