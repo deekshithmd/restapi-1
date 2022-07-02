@@ -19,7 +19,7 @@ con.on("error", () => console.error("Error occurred..."));
 
 const userRouter = require("./routes/users");
 
-app.get("/",(req,res)=> res.send("Hello express"))
+app.get("/",(req,res)=> res.send("Hello express app"))
 
 app.use("/users", userRouter);
 
