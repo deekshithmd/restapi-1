@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const cors = requires("cors");
+const cors = require("cors");
 
 const app = express();
 
@@ -21,4 +21,4 @@ const userRouter = require("./routes/users");
 
 app.use("/users", userRouter);
 
-app.listen(3000, () => console.log("server started"));
+app.listen(process.env.PORT || 3000, () => console.log("server started"));
